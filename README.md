@@ -4,6 +4,21 @@ This project demonstrates creation and linting (dry run consumption) of a pod fr
 
 Reference: http://www.yudiz.com/creating-your-own-ios-framework-and-distributed-using-cocoapods/
 
+<!-- TOC -->
+
+- [1. Sample Podspec](#1-sample-podspec)
+	- [1.1. Prerequisites](#11-prerequisites)
+	- [1.2. Creation](#12-creation)
+	- [1.3. Dry Run Consumption](#13-dry-run-consumption)
+		- [1.3.1. Example URL](#131-example-url)
+		- [1.3.2. Remote Tag Not Found](#132-remote-tag-not-found)
+		- [1.3.3. Unable to Read License](#133-unable-to-read-license)
+		- [1.3.4. Version Mismatch](#134-version-mismatch)
+		- [1.3.5. Swift Version](#135-swift-version)
+		- [1.3.6. Deployment Target](#136-deployment-target)
+
+<!-- /TOC -->
+
 ## 1.1. Prerequisites
 
 Tested on below configuration
@@ -58,7 +73,7 @@ end
 
 
 
-## Dry Run Consumption 
+## 1.3. Dry Run Consumption 
 
 Dry run the consumption by running the following command
 
@@ -68,7 +83,7 @@ pod spec lint
 ```
 
 
-### Example URL
+### 1.3.1. Example URL
 
 ERROR:
 ```
@@ -82,7 +97,7 @@ FIX: Change the source repo as below:
   s.source       = { :git => "https://github.com/vijayvepa/YLogging.git", :tag => "0.0.2" }
 ```
 
-### Remote Tag Not Found 
+### 1.3.2. Remote Tag Not Found 
 
 ERROR:
 ```
@@ -99,7 +114,7 @@ git tag v0.0.1
 git push --tags
 ```
 
-### Unable to Read License
+### 1.3.3. Unable to Read License
 
 ERROR:
 ```
@@ -120,7 +135,7 @@ git push --tags
 NOTE: Tried just removing the license field but got [this](ScreenLogs/4.RemoveLicense.log) error
 
 
-### Version Mismatch
+### 1.3.4. Version Mismatch
 
 ERROR:
 ```
@@ -135,7 +150,7 @@ Change the `version` in podspec to match git tag as below:
   s.version      = "0.0.2"
 ```
 
-### Swift Version
+### 1.3.5. Swift Version
 
 ERROR:
 
@@ -151,7 +166,7 @@ Update the `swift_version` as below:
   s.swift_version = "4.0"
 ```
 
-### Deployment Target
+### 1.3.6. Deployment Target
 
 ERROR:
 

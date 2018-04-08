@@ -1,0 +1,11 @@
+
+MACC02RR83AG8WP:YLogging vijayvepakomma$ pod spec lint 
+
+ -> YLogging (0.0.2)
+    - WARN  | swift: The validator used Swift 3.2 by default because no Swift version was specified. To specify a Swift version during validation, add the `swift_version` attribute in your podspec. Note that usage of the `--swift-version` parameter or a `.swift-version` file is now deprecated.
+    - ERROR | [OSX] xcodebuild: Returned an unsuccessful exit code. You can use `--verbose` for more information.
+    - ERROR | [iOS] swift: Swift support uses dynamic frameworks and is therefore only supported on iOS > 8.
+
+Analyzed 1 podspec.
+
+[!] The spec did not pass validation, due to 2 errors and 1 warning.

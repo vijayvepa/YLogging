@@ -1,0 +1,38 @@
+
+MACC02RR83AG8WP:YLogging vijayvepakomma$ pod spec lint
+
+ -> YLogging (0.0.1)
+    - WARN  | github_sources: Github repositories should use an `https` link.
+    - WARN  | url: The URL (http://github.com/vijayvepa/YLogging) is not reachable.
+    - ERROR | [OSX] unknown: Encountered an unknown error ([!] /usr/bin/git clone http://github.com/vijayvepa/YLogging.git /var/folders/kt/1k21lfvn4fqf_1pc1qbtrd3r0000gn/T/d20180408-65165-w89zn --template= --single-branch --depth 1 --branch v0.0.1
+
+Cloning into '/var/folders/kt/1k21lfvn4fqf_1pc1qbtrd3r0000gn/T/d20180408-65165-w89zn'...
+remote: Repository not found.
+fatal: repository 'https://github.com/vijayvepa/YLogging.git/' not found
+) during validation.
+
+Analyzed 1 podspec.
+
+[!] The spec did not pass validation, due to 1 error and 2 warnings.
+MACC02RR83AG8WP:YLogging vijayvepakomma$ pod spec lint
+
+ -> YLogging (0.0.1)
+    - ERROR | [OSX] unknown: Encountered an unknown error ([!] /usr/bin/git clone https://github.com/vijayvepa/YLogging.git /var/folders/kt/1k21lfvn4fqf_1pc1qbtrd3r0000gn/T/d20180408-65650-f4zvne --template= --single-branch --depth 1 --branch v0.0.1
+
+Cloning into '/var/folders/kt/1k21lfvn4fqf_1pc1qbtrd3r0000gn/T/d20180408-65650-f4zvne'...
+fatal: Remote branch v0.0.1 not found in upstream origin
+) during validation.
+
+Analyzed 1 podspec.
+
+[!] The spec did not pass validation, due to 1 error.
+
+
+FIX:
+
+MACC02RR83AG8WP:YLogging vijayvepakomma$ git tag
+MACC02RR83AG8WP:YLogging vijayvepakomma$ git tag v0.0.1
+MACC02RR83AG8WP:YLogging vijayvepakomma$ git push origin v0.0.1
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/vijayvepa/YLogging.git
+ * [new tag]         v0.0.1 -> v0.0.1

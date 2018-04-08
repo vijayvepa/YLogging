@@ -1,0 +1,34 @@
+
+MACC02RR83AG8WP:YLogging vijayvepakomma$ pod spec lint
+
+ -> YLogging (0.0.1)
+    - ERROR | license: Sample license type.
+    - ERROR | source: The Git source still contains the example URL.
+    - WARN  | summary: The summary is not meaningful.
+    - ERROR | description: The description is empty.
+    - WARN  | url: The URL (http://github.com/vijayvepa/YLogging) is not reachable.
+    - ERROR | [OSX] unknown: Encountered an unknown error (The `YLogging` pod failed to validate due to 3 errors:
+    - ERROR | license: Sample license type.
+    - ERROR | source: The Git source still contains the example URL.
+    - WARN  | summary: The summary is not meaningful.
+    - ERROR | description: The description is empty.
+
+) during validation.
+
+Analyzed 1 podspec.
+
+[!] The spec did not pass validation, due to 4 errors and 2 warnings.
+MACC02RR83AG8WP:YLogging vijayvepakomma$ pod spec lint
+
+ -> YLogging (0.0.1)
+    - ERROR | source: The Git source still contains the example URL.
+    - WARN  | url: The URL (http://github.com/vijayvepa/YLogging) is not reachable.
+    - ERROR | [OSX] unknown: Encountered an unknown error (The `YLogging` pod failed to validate due to 1 error:
+    - ERROR | source: The Git source still contains the example URL.
+
+) during validation.
+
+Analyzed 1 podspec.
+
+[!] The spec did not pass validation, due to 2 errors and 1 warning.
+

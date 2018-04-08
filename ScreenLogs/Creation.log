@@ -1,0 +1,5 @@
+Last login: Sat Apr  7 09:24:57 on ttys004
+MACC02RR83AG8WP:~ vijayvepakomma$ cd /Users/vijayvepakomma/Learning/Pods/SimplePodExample/YLogging
+MACC02RR83AG8WP:YLogging vijayvepakomma$ pod spec create YLogging
+
+Specification created at YLogging.podspec
